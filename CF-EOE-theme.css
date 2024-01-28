@@ -1,12 +1,12 @@
 :root {
-    --backgroundGreyColor: #000000;
+    --backgroundGreyColor: #181818;
     --tableGreyRow: #1e1e1e;
-    --whiteTextColor: rgb(130, 130, 130);
+    --whiteTextColor: rgb(220, 220, 220);
     --inputBoxBackgroundBorderColor: #383838;
-    /* Changed to pure red
+    /* ever so slightly pinkish but does the job well.
     Decreasing lightness increases redness and increasing increases pinkness */
-    --redColorJustPassesA11Y: hsl(0, 100%, 50%);
-    --genericLinkBlueColor: #00a6ff;
+    --redColorJustPassesA11Y: hsl(0, 100%, 64%);
+    --genericLinkBlueColor: #21b0fd;
     --genericLinkVisitedBlueColor: #8ab1ff;
 }
 
@@ -26,7 +26,7 @@ body:not(.wysiwyg), /* wysiwyg is the textbox in the usertalk section, it's insi
     background: var(--backgroundGreyColor) !important;
     background-color: var(--backgroundGreyColor) !important;
 }
-.roundbox{border:1px solid #000000 !important;position:relative}.roundbox .caption{color:#3b5998 !important;font-size:1.5rem;font-weight:700;margin:.2em 0;position:relative}.roundbox .titled{padding:0 0 .3em .5em;border-bottom: 1px solid #000000 !important;}.roundbox .caption .top-links{font-size:1.1rem;font-family:arial;position:absolute;right:.5em;top:.3em}.roundbox .bottom-links{font-family:arial;font-size:1.1rem;border-top:1px solid #000000 !important;background-color:#181818 !important;padding:.45em}.roundbox .dark{background-color:#181818}.roundbox .bottom-links a{margin:.1em}.roundbox table.rtable{width:100%;margin-top:-4px;border:none}.roundbox .rtable td,.roundbox .rtable th{border:1px solid #000000 !important;border-right:none;border-top:none;padding:4px;text-align:center;font-size:.9em}.roundbox .rtable th{font-size:1em;padding-top:7px}.roundbox .rtable .left{border-left:none}.roundbox .rtable .bottom{border-bottom:none}.roundbox .rtable .corner{width:10px;height:10px}.roundbox .roundbox-lt{background:url(../images/roundbox/roundbox-lt.png) no-repeat top left;position:absolute;top:-1px;left:-1px}.roundbox .roundbox-rt{background:url(../images/roundbox/roundbox-rt.png) no-repeat top right;position:absolute;top:-1px;right:-1px}.roundbox .roundbox-lb{background:url(../images/roundbox/roundbox-lb.png) no-repeat bottom left;position:absolute;bottom:-1px;left:-1px}.roundbox .roundbox-rb{background:url(../images/roundbox/roundbox-rb.png) no-repeat bottom right;position:absolute;bottom:-1px;right:-1px}.rtable th{font-weight:700}
+
 .spoiler-content,
 .roundbox.highlight-blue {
     background-color: hsl(240, 15%, 35%) !important;
@@ -41,7 +41,7 @@ body:not(.wysiwyg), /* wysiwyg is the textbox in the usertalk section, it's insi
 }
 
 div.ttypography .bordertable thead th:not(:last-child) {
-    border-right-color: #000 !important;; 
+    border-right-color: #000;
 }
 
 .search,
@@ -150,8 +150,6 @@ div.ttypography .tt,
 .sidebar-menu ul li {
     border: none !important;
 }
-.roundbox{border:1px solid #000000 !important;position:relative}
-.datatable td,.datatable th{border-top: 1px solid #000000 !important;border-right: 1px solid #000000 !important;padding:.4em;font-size:1.3rem;text-align:center;overflow:hidden;  }
 
 .sidebar-menu ul li:hover {
     border: 1px solid #2e2e2e !important;
@@ -161,18 +159,18 @@ div.ttypography .tt,
 /* submissions page and contest front page */
 
 .problems tr.rejected-problem td.act {
-    background-color: #b52222 !important;
+    background-color: #ffabab !important;
 }
 
 .problems tr.accepted-problem td.act {
-    background-color: #58ca25!important;
+    background-color: #b5fd95 !important;
 }
 .problems tr.rejected-problem td.id {
-    border-left-color: #b52222 !important;
+    border-left-color: #ffabab !important;
 }
 
 .problems tr.accepted-problem td.id {
-    border-left-color: #58ca25 !important;
+    border-left-color: #b5fd95 !important;
 }
 
 div.ttypography .MathJax {
@@ -189,17 +187,17 @@ table tbody tr th a img[alt^="Sort"] {
     filter: invert(1);
 }
 
-
+/* issues/#7, #28 */
 /* partially solved contest */
 .datatable td.state[style^="background-color: rgb(221, 238, 255);"] {
-    background-color: #2e2e2e !important;
+    background-color: #4a4a4a !important;
 }
 
 /* completely solved contest */
 .datatable td.state[style^="background-color: rgb(212, 237, 201);"] {
     background-color: #005a07 !important;
 }
-.roundbox .rtable td,.roundbox .rtable th{border:1px solid #000000 !important;border-right:none;border-top:none;padding:4px;text-align:center;font-size:.9em}
+
 /* markitup topic editor, make header and tag input boxes white */
 .miu-complete,
 .miu-comment,
@@ -214,7 +212,7 @@ input[type="submit"],
 input[type="button"],
 input[type="file"] {
     color: var(--whiteTextColor) !important;
-    background: #181818 !important;
+    background: #4f4f4f !important;
     border-color: #4f4f4f !important;
 }
 
@@ -258,6 +256,12 @@ textarea[name="output"],
 
 .close_image {
     opacity: 0.7 !important;
+}
+
+/* new feature that highlights different test cases in problem page
+   https://codeforces.com/problemset/problem/1721/A */
+.problem-statement .test-example-line-even {
+    background-color: #444 !important;
 }
 
 /* TEXT COLOR CHANGES */
@@ -459,17 +463,6 @@ td.dark span[style^="color: #0000bb;"] {
     color: #8cc3f9 !important;
 }
 
-.problem-statement .test-example-line-even {
-    background-color: #2b2b2b !important;
-}
-.problem-statement .test-example-line-odd {
-    background-color: #333333 !important;
-}
-.usertalks tr.unread td {
-    background-color: #2b2b2b !important;
-}
-
-
 /* gym pages */
 div.setting-name {
     color: #6c8bcc !important;
@@ -485,14 +478,14 @@ span.user-admin,
 a.user-admin,
 span.user-black,
 a.user-black {
-    color: #000 !important;
+    color: #fff !important;
 }
 
 /* tr for the rating tables page*/
 tr.user-blue td,
 span.user-blue,
 a.user-blue {
-    color: #35f !important;
+    color: #757dff !important;
 }
 
 /* for a11y contrast coloring */
@@ -513,7 +506,7 @@ a.user-cyan {
 tr.user-violet td,
 span.user-violet,
 a.user-violet {
-    color: #ac48f5 !important;
+    color: #ce8aff !important;
 }
 
 tr.user-gray td,
