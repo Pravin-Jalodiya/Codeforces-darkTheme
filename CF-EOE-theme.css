@@ -537,6 +537,9 @@ div.diffHtmlTarget pre.prettyprint ins[style^="background:#80ff80"] .lit {
     background: #ff9d9d !important;
 }
 
-div p, span {
+div p {
+color: rgb(160, 160, 160);
+}
+div p span {
 color: rgb(160, 160, 160);
 }
