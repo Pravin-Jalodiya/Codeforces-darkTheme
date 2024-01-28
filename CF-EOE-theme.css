@@ -536,3 +536,7 @@ div.diffHtmlTarget pre.prettyprint ins[style^="background:#80ff80"] .lit {
     /* tone down the red tokens in the green regions, to improve color contrast */
     background: #ff9d9d !important;
 }
+
+div p {
+color: rgb(130, 130, 130);
+}
