@@ -1,7 +1,7 @@
 :root {
     --backgroundGreyColor: #181818;
     --tableGreyRow: #1e1e1e;
-    --whiteTextColor: rgb(220, 220, 220);
+    --whiteTextColor: rgb(130, 130, 130);
     --inputBoxBackgroundBorderColor: #383838;
     /* ever so slightly pinkish but does the job well.
     Decreasing lightness increases redness and increasing increases pinkness */
