@@ -540,12 +540,12 @@ div.diffHtmlTarget pre.prettyprint ins[style^="background:#80ff80"] .lit {
 div p {
 color: rgb(150, 150, 150);
 }
-div.menu-list-container li {
+/* div.menu-list-container li {
     color: rgb(150, 150, 150);
-} 
-div.problem-statment {
+}  */
+/* div.problem-statment {
     color: rgb(150,150,150);
-}
+} */
 div.header {
     color: rgb(160,160,160);
 }
