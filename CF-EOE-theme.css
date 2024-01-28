@@ -1,12 +1,12 @@
 :root {
     --backgroundGreyColor: #181818;
     --tableGreyRow: #1e1e1e;
-    --whiteTextColor: rgb(130, 130, 130);
+    --whiteTextColor: rgb(240, 240, 240);
     --inputBoxBackgroundBorderColor: #383838;
-    /* ever so slightly pinkish but does the job well.
+    /* Changed to pure red
     Decreasing lightness increases redness and increasing increases pinkness */
-    --redColorJustPassesA11Y: hsl(0, 100%, 64%);
-    --genericLinkBlueColor: #21b0fd;
+    --redColorJustPassesA11Y: hsl(0, 100%, 50%);
+    --genericLinkBlueColor: #00a6ff;
     --genericLinkVisitedBlueColor: #8ab1ff;
 }
 
@@ -150,6 +150,8 @@ div.ttypography .tt,
 .sidebar-menu ul li {
     border: none !important;
 }
+.roundbox{border:1px solid #000000 !important;position:relative}
+.datatable td,.datatable th{border-top: 1px solid #000000 !important;border-right: 1px solid #000000 !important;padding:.4em;font-size:1.3rem;text-align:center;overflow:hidden;  }
 
 .sidebar-menu ul li:hover {
     border: 1px solid #2e2e2e !important;
@@ -159,18 +161,18 @@ div.ttypography .tt,
 /* submissions page and contest front page */
 
 .problems tr.rejected-problem td.act {
-    background-color: #ffabab !important;
+    background-color: #b52222 !important;
 }
 
 .problems tr.accepted-problem td.act {
-    background-color: #b5fd95 !important;
+    background-color: #58ca25!important;
 }
 .problems tr.rejected-problem td.id {
-    border-left-color: #ffabab !important;
+    border-left-color: #b52222 !important;
 }
 
 .problems tr.accepted-problem td.id {
-    border-left-color: #b5fd95 !important;
+    border-left-color: #58ca25 !important;
 }
 
 div.ttypography .MathJax {
@@ -187,17 +189,17 @@ table tbody tr th a img[alt^="Sort"] {
     filter: invert(1);
 }
 
-/* issues/#7, #28 */
+
 /* partially solved contest */
 .datatable td.state[style^="background-color: rgb(221, 238, 255);"] {
-    background-color: #4a4a4a !important;
+    background-color: #2e2e2e !important;
 }
 
 /* completely solved contest */
 .datatable td.state[style^="background-color: rgb(212, 237, 201);"] {
     background-color: #005a07 !important;
 }
-
+.roundbox .rtable td,.roundbox .rtable th{border:1px solid #000000 !important;border-right:none;border-top:none;padding:4px;text-align:center;font-size:.9em}
 /* markitup topic editor, make header and tag input boxes white */
 .miu-complete,
 .miu-comment,
@@ -212,7 +214,7 @@ input[type="submit"],
 input[type="button"],
 input[type="file"] {
     color: var(--whiteTextColor) !important;
-    background: #4f4f4f !important;
+    background: #181818 !important;
     border-color: #4f4f4f !important;
 }
 
@@ -256,12 +258,6 @@ textarea[name="output"],
 
 .close_image {
     opacity: 0.7 !important;
-}
-
-/* new feature that highlights different test cases in problem page
-   https://codeforces.com/problemset/problem/1721/A */
-.problem-statement .test-example-line-even {
-    background-color: #444 !important;
 }
 
 /* TEXT COLOR CHANGES */
@@ -463,6 +459,17 @@ td.dark span[style^="color: #0000bb;"] {
     color: #8cc3f9 !important;
 }
 
+.problem-statement .test-example-line-even {
+    background-color: #2b2b2b !important;
+}
+.problem-statement .test-example-line-odd {
+    background-color: #333333 !important;
+}
+.usertalks tr.unread td {
+    background-color: #2b2b2b !important;
+}
+
+
 /* gym pages */
 div.setting-name {
     color: #6c8bcc !important;
@@ -478,14 +485,14 @@ span.user-admin,
 a.user-admin,
 span.user-black,
 a.user-black {
-    color: #fff !important;
+    color: #000 !important;
 }
 
 /* tr for the rating tables page*/
 tr.user-blue td,
 span.user-blue,
 a.user-blue {
-    color: #757dff !important;
+    color: #35f !important;
 }
 
 /* for a11y contrast coloring */
@@ -506,7 +513,7 @@ a.user-cyan {
 tr.user-violet td,
 span.user-violet,
 a.user-violet {
-    color: #ce8aff !important;
+    color: #ac48f5 !important;
 }
 
 tr.user-gray td,
