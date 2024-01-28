@@ -537,9 +537,9 @@ div.diffHtmlTarget pre.prettyprint ins[style^="background:#80ff80"] .lit {
     background: #ff9d9d !important;
 }
 
-/* div p {
+div p {
 color: rgb(150, 150, 150);
-} */
+}
 div.menu-list-container li {
     color: rgb(150, 150, 150);
 } 
