@@ -1,7 +1,7 @@
 :root {
     --backgroundGreyColor: #181818;
     --tableGreyRow: #1e1e1e;
-    --whiteTextColor: rgb(240, 240, 240);
+    --whiteTextColor: rgb(160, 160, 160);
     --inputBoxBackgroundBorderColor: #383838;
     /* Changed to pure red
     Decreasing lightness increases redness and increasing increases pinkness */
@@ -76,7 +76,7 @@ a {
 up its colors with the black background
 only for logo headers in gyms, etc. */
 #header > div:first-child img, ._logo_div img, .sidebox img[alt="Logo"] {
-    background-color: white !important;
+    background-color: rgb(160, 160, 160) !important;
 }
 
 /* all codeforces system hosted images already
@@ -161,18 +161,18 @@ div.ttypography .tt,
 /* submissions page and contest front page */
 
 .problems tr.rejected-problem td.act {
-    background-color: #b52222 !important;
+    background-color: hsl(0, 100%, 70%) !important;
 }
 
 .problems tr.accepted-problem td.act {
-    background-color: #58ca25!important;
+    background-color: hsl(124, 100%, 78%) !important;
 }
 .problems tr.rejected-problem td.id {
-    border-left-color: #b52222 !important;
+    border-left-color: hsl(0, 100%, 70%) !important;
 }
 
 .problems tr.accepted-problem td.id {
-    border-left-color: #58ca25 !important;
+    border-left-color: hsl(124, 100%, 78%) !important;
 }
 
 div.ttypography .MathJax {
@@ -246,7 +246,7 @@ textarea[name="input"],
 textarea[name="output"],
 #sourceCodeTextarea {
     background-color: #272822;
-    color: white;
+    color: rgb(160, 160, 160);
 }
 
 /* issues/#10 */
@@ -349,7 +349,7 @@ a:link.notice {
 
 div ul.menu-list li a:link,
 div ul.menu-list li a:visited {
-    color: white !important;
+    color: rgb(150, 150, 150) !important;
 }
 
 /* on submissions page */
@@ -381,7 +381,7 @@ a.red-link[href^="/contestRegistration"] {
 .input pre, .output pre,
 /* embedded submissions display */
 pre.input, pre.output, pre.answer, pre.checker, pre.diagnostics {
-    color: white !important;
+    color: rgb(160, 160, 160) !important;
 }
 
 span.contest-state-regular,
@@ -411,7 +411,7 @@ span.contest-state-regular,
 }
 
 .fix-tag-topic-contrast span a {
-    color: white !important;
+    color: rgb(160, 160, 160) !important;
 }
 
 /* issues#6 */
@@ -480,19 +480,21 @@ div.setting-name {
 /* need to prefix overrides with tag name
  precedence woes :( */
 span.user-legendary::first-letter,
+span.user-gray::first-letter,
 a.user-legendary::first-letter,
+a.user-gray::first-letter,
 span.user-admin,
 a.user-admin,
 span.user-black,
 a.user-black {
-    color: #000 !important;
+    color: #fff !important;
 }
 
 /* tr for the rating tables page*/
 tr.user-blue td,
 span.user-blue,
 a.user-blue {
-    color: #35f !important;
+    color: #6b84ff !important;
 }
 
 /* for a11y contrast coloring */
@@ -519,7 +521,7 @@ a.user-violet {
 tr.user-gray td,
 span.user-gray,
 a.user-gray {
-    color: #8c8c8c !important;
+    color: hsl(269, 100%, 72%) !important;
 }
 
 /* ins tag in compare window of submissions */
@@ -536,15 +538,11 @@ div.diffHtmlTarget pre.prettyprint ins[style^="background:#80ff80"] .lit {
     /* tone down the red tokens in the green regions, to improve color contrast */
     background: #ff9d9d !important;
 }
-
 div p {
 color: rgb(150, 150, 150);
 }
-div p {
-color: rgb(150, 150, 150);   
-}
-div.menu-list-container li {
-    color: rgb(150, 150, 150);
+div p span {
+color: rgb(120, 120, 120);
 }
 div.header {
     color: rgb(160,160,160);
