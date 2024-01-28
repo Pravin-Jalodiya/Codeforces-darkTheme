@@ -538,8 +538,11 @@ div.diffHtmlTarget pre.prettyprint ins[style^="background:#80ff80"] .lit {
 }
 
 div p {
-color: rgb(160, 160, 160);
+color: rgb(150, 150, 150);
 }
 div p span {
-color: rgb(160, 160, 160);
+color: rgb(150, 150, 150);
+}
+.menu-list-container .menu-list.main-menu-list li {
+    color: rgb(150, 150, 150);
 }
