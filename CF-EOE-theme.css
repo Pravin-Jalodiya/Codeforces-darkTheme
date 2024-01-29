@@ -547,3 +547,6 @@ color: rgb(120, 120, 120);
 div.header {
     color: rgb(160,160,160);
 }
+div.spoiler-content p {
+    color: rgb(180,180,180);
+}
