@@ -550,3 +550,6 @@ div.header {
 div.spoiler-content p {
     color: rgb(180,180,180);
 }
+div.spoiler-content p span {
+    color: rgb(100,100,100);
+}
